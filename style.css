@@ -2,6 +2,8 @@
 
 /* change fom px to rem for fonts */
 
+@media screen and (max-width: 768px) and (min-width: 300px)  {
+
 html.transition,
 html.transition *,
 html.transition *:before,
@@ -129,7 +131,6 @@ body {
     justify-content: stretch;
     padding: 80px 10px;
 } 
-
 
 /* Toggle button and styling */
 
@@ -301,16 +302,23 @@ section .upper-section, section .lower-section {
     margin-top: 10px;
 }
 
+}
+
 @media only screen and (min-width: 768px) {
 	section .upper-section, section .lower-section {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 25px;
+        grid-gap: 15px;
         padding: 30px;
     }
 
     .lower-section {
         grid-template-rows: repeat(2, 100px);     
+    }
+
+    .lower-section div, .upper-section div {
+        width: 250px;
+
     }
 
     .lower-section div {
