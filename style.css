@@ -2,7 +2,7 @@
 
 /* change fom px to rem for fonts */
 
-@media screen and (max-width: 768px) and (min-width: 300px)  {
+@media only screen and (min-width: 200px)  {
 
 html.transition,
 html.transition *,
@@ -51,27 +51,27 @@ html[data-theme='light'] {
 
 h4, h3, h2 {
     color: var(--font-2);
-    margin-left: 30px;
+    margin-left: 1.875rem;
 }
 
 h5 {
    color: var(--font-1);
-   padding-top: 1px;
-   margin-left: 30px;
-   margin-bottom: 8px;
+   padding-top: 0.063rem;
+   margin-left: 1.875rem;
+   margin-bottom: 0.5rem;
 }
 
 header {
     position: absolute;
     z-index: 10;
-    height: 150px;
+    height: 9.375rem;
     width: 100%;
-    padding: 10px;
+    padding: 0.625rem;
     background-color: var(--top-BG);    
 }
 
 small {
-    font-size: 10px;
+    font-size: 0.625;
 }
 
 .likes-views, .followers {
@@ -80,20 +80,20 @@ small {
 
 .dm-text {
    color: var(--font-2);
-   margin-left: 30px;
-   margin-top: 20px;
+   margin-left: 1.875rem;
+   margin-top: 1.25rem;
 }
 
 .dark-mode {
   display: grid;
   grid-template-columns: auto;
   justify-items: right;
-  margin-top: -28px;
-  margin-right: 28px;
+  margin-top: -1.75rem;
+  margin-right: 1.75rem;
 }
 
 .likes-views, .username {
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .white {
@@ -101,7 +101,7 @@ small {
 }
 
 .lower-section .white {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -129,7 +129,7 @@ body {
     display: grid;
 	align-items: center;
     justify-content: stretch;
-    padding: 80px 10px;
+    padding: 5rem 0.625rem;
 } 
 
 /* Toggle button and styling */
@@ -142,12 +142,12 @@ input[type=checkbox]{
 
 label {
 	cursor: pointer;
-	text-indent: -9999px;
-	width: 52px;
-	height: 27px;
+	text-indent: -624.938rem;
+	width: 3.25rem;
+	height: 1.688rem;
 	background: linear-gradient(90grad, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 	display: block;
-	border-radius: 15px;
+	border-radius: 0.938rem;
 	position: relative;
 }
 
@@ -156,10 +156,10 @@ label:after {
 	position: absolute;
 	top: 3px;
 	left: 3px;
-	width: 20px;
-	height: 20px;
+	width: 1.25rem;
+	height: 1.25rem;
 	background: var(--Card-BG);
-	border-radius: 90px;
+	border-radius: 5.625rem;
     transition: 0.3s;
     
 }
@@ -170,13 +170,13 @@ input:checked + label {
 }
 
 input:checked + label:after {
-	left: calc(100% - 5px);
+	left: calc(100% - 0.313rem);
     transform: translateX(-100%);
     
 }
 
 label:active:after {
-	width: 45px;
+	width: 2.813rem;
 }
 
 section {
@@ -186,8 +186,8 @@ section {
 section .upper-section, section .lower-section {
 	display: grid;
     grid-template-columns: 100%;
-    grid-gap: 25px;
-    padding: 30px;
+    grid-gap: 1.563rem;
+    padding: 1.875rem;
     position: relative;
     z-index: 5000;
 }
@@ -201,24 +201,29 @@ section .upper-section, section .lower-section {
 }
 
 .upper-section .overview-link {
-    margin-right: 5px;
+    margin-right: 0.313rem;
 }
 
 .upper-section div {
     text-align: center;
-    padding: 10px 0px 10px 0px;
-    border-radius: 5px;
+    padding: 0.635rem 0px 0.625rem;
+    border-radius: 0.313rem;
     background-color: var(--Card-BG);
+    margin:rem;
+}
+
+.fb {
+    margin-top: 1.5rem;
 }
 
 .upper-section div p {
-    margin: 10px 0px 10px 0px;
+    margin: 0.625rem 0px 0.625rem 0px;
 }
 
 .upper-section h6 {
-    font-size: 14px;
+    font-size: 0.875px;
     font-weight: 100;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
 }
 
 .upper-section .white {
@@ -234,58 +239,58 @@ section .upper-section, section .lower-section {
     content: "";
     display: block;
     background-image: linear-gradient(to right,  hsl(208, 92%, 53%),  hsl(208, 92%, 53%));
-    height: 3px;
+    height: 0.188rem;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    border-radius: 3px 3px 0 0;
+    border-radius: 0.188rem 0.188rem 0 0;
 }
 
 .upper-section .tw:before {
     content: "";
     display: block;
     background-image: linear-gradient(to right, hsl(203, 89%, 53%), hsl(203, 89%, 53%));
-    height: 3px;
+    height: 0.188rem;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    border-radius: 3px 3px 0 0;
+    border-radius: 0.188rem 0.188rem 0 0;
 }
 
 .upper-section .ig:before {
     content: "";
     display: block;
     background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
-    height: 3px;
+    height: 0.188rem;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    border-radius: 3px 3px 0 0;   
+    border-radius: 0.188rem 0.188rem 0 0;   
 }
 
 .upper-section .yt:before {
     content: "";
     display: block;
     background-image: linear-gradient(to right, hsl(348, 97%, 39%), hsl(348, 97%, 39%));
-    height: 3px;
+    height: 0.188rem;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    border-radius: 3px 3px 0 0;   
+    border-radius: 0.188rem 0.188rem 0 0;   
 }
 
 .lower-section {
-    grid-template-rows: repeat(2, 100px);     
+    grid-template-rows: repeat(2, 6.25rem);     
 }
 
 .lower-section div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 20px;
+    padding: 1.25rem;
     background-color: var(--Card-BG);
     border-radius: 5px;
 }
@@ -295,11 +300,11 @@ section .upper-section, section .lower-section {
 }
 
 .lower-section small {
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 .lower-section .white {
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 }
@@ -308,16 +313,16 @@ section .upper-section, section .lower-section {
 	section .upper-section, section .lower-section {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: 15px;
-        padding: 30px;
+        grid-gap: 0.938rem;
+        padding: 1.875rem;
     }
 
     .lower-section {
-        grid-template-rows: repeat(2, 100px);     
+        grid-template-rows: repeat(2, 6.25rem);     
     }
 
     .lower-section div, .upper-section div {
-        width: 250px;
+        width: 15.625rem;
 
     }
 
@@ -329,9 +334,9 @@ section .upper-section, section .lower-section {
 header {
     position: absolute;
     z-index: 10;
-    height: 200px;
+    height: 12.5rem;
     width: 100%;
-    padding: 10px;
+    padding: 0.625rem;
     background-color: var(--top-BG);
     display: grid;
     grid-template-columns: 80% auto auto;
@@ -347,13 +352,13 @@ section {
 
 .dm-text {
     color: var(--font-1);
-    margin-top: 17px;
-    font: 20px;
+    margin-top: 1.063rem;
+    font: 1.25rem;
 }
 
 .dark-mode {
-   margin-top: -130px;
-   margin-right: 100px;
+   margin-top: -8.125rem;
+   margin-right: 6.25rem;
 }
 .wrapper {
     width: 100%; 
@@ -361,22 +366,25 @@ section {
     display: grid;
 	align-items: center;
     justify-content: stretch;
-    padding: 80px 80px;
+    padding: 5rem 5rem;
 } 
 
 h4, h3, h2 {
     color: var(--font-2);
-    margin-left: 30px;
+    margin-left: 1.875rem;
 }
 
 h5 {
    color: var(--font-1);
-   margin-left: 100px;
+   margin-left: 6.25rem;
    padding-top: 1px;
 }
 
 header h2 {
-    margin-left: 100px;
+    margin-left: 6.25rem;
+}
+.fb {
+    margin-top: 0rem;
 }
 
 }
